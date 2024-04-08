@@ -1,0 +1,68 @@
+matchup_id,team_1,seed_1,points_1,team_1_prev_matchup,team_2,seed_2,points_2,team_2_prev_matchup,region
+1,UTSA,16,70,,Alabama State,16,61,,East
+2,UAB,12,52,,Clemson,12,70,,East
+3,VCU,11,59,,USC,11,46,,Southwest
+4,UNC Asheville,16,81,,Arkansas-Little Rock,16,77,,Southeast
+5,Ohio State,1,75,,UTSA,16,46,1,East
+6,George Mason,8,61,,Villanova,9,57,,East
+7,West Virginia,5,84,,Clemson,12,76,2,East
+8,Kentucky,4,59,,Princeton,13,57,,East
+9,Xavier,6,55,,Marquette,11,66,,East
+10,Syracuse,3,77,,Indiana State,14,60,,East
+11,Washington,7,68,,Georgia,10,65,,East
+12,North Carolina,2,102,,Long Island,15,87,,East
+13,Duke,1,87,,Hampton,16,45,,West
+14,Michigan,8,75,,Tennessee,9,45,,West
+15,Arizona,5,77,,Memphis,12,75,,West
+16,Texas,4,85,,Oakland,13,81,,West
+17,Cincinnati,6,78,,Missouri,11,63,,West
+18,Connecticut,3,81,,Bucknell,14,52,,West
+19,Temple,7,66,,Penn State,10,64,,West
+20,San Diego State,2,68,,Northern Colorado,15,50,,West
+21,Kansas,1,72,,Boston University,16,53,,Southwest
+22,UNLV,8,62,,Illinois,9,73,,Southwest
+23,Vanderbilt,5,66,,Richmond,12,79,,Southwest
+24,Louisville,4,61,,Morehead State,13,62,,Southwest
+25,Georgetown,6,56,,VCU,11,74,3,Southwest
+26,Purdue,3,65,,Saint Peter's,14,43,,Southwest
+27,Texas A&M,7,50,,Florida State,10,57,,Southwest
+28,Notre Dame,2,69,,Akron,15,56,,Southwest
+29,Pittsburgh,1,74,,UNC Asheville,16,51,4,Southeast
+30,Butler,8,60,,Old Dominion,9,58,,Southeast
+31,Kansas State,5,73,,Utah State,12,68,,Southeast
+32,Wisconsin,4,72,,Belmont,13,58,,Southeast
+33,St. John's,6,71,,Gonzaga,11,86,,Southeast
+34,BYU,3,74,,Wofford,14,66,,Southeast
+35,UCLA,7,78,,Michigan State,10,76,,Southeast
+36,Florida,2,79,,UC Santa Barbara,15,51,,Southeast
+37,Ohio State,1,98,5,George Mason,8,66,6,East
+38,West Virginia,5,63,7,Kentucky,4,71,8,East
+39,Marquette,11,66,9,Syracuse,3,62,10,East
+40,Washington,7,83,11,North Carolina,2,86,12,East
+41,Duke,1,73,13,Michigan,8,71,14,West
+42,Arizona,5,70,15,Texas,4,69,16,West
+43,Cincinnati,6,58,17,Connecticut,3,69,18,West
+44,Temple,7,64,19,San Diego State,2,71,20,West
+45,Kansas,1,73,21,Illinois,9,59,22,Southwest
+46,Richmond,12,65,23,Morehead State,13,48,24,Southwest
+47,VCU,11,94,25,Purdue,3,76,26,Southwest
+48,Florida State,10,71,27,Notre Dame,2,57,28,Southwest
+49,Pittsburgh,1,70,29,Butler,8,71,30,Southeast
+50,Kansas State,5,65,31,Wisconsin,4,70,32,Southeast
+51,Gonzaga,11,67,33,BYU,3,89,34,Southeast
+52,UCLA,7,65,35,Florida,2,73,36,Southeast
+53,Ohio State,1,60,37,Kentucky,4,62,38,East
+54,Marquette,11,63,39,North Carolina,2,81,40,East
+55,Duke,1,77,41,Arizona,5,93,42,West
+56,Connecticut,3,74,43,San Diego State,2,67,44,West
+57,Kansas,1,77,45,Richmond,12,57,46,Southwest
+58,VCU,11,72,47,Florida State,10,71,48,Southwest
+59,Butler,8,61,49,Wisconsin,4,54,50,Southeast
+60,BYU,3,74,51,Florida,2,83,52,Southeast
+61,Kentucky,4,76,53,North Carolina,2,69,54,East
+62,Arizona,5,63,55,Connecticut,3,65,56,West
+63,Kansas,1,61,57,VCU,11,71,58,Southwest
+64,Butler,8,74,59,Florida,2,71,60,Southeast
+65,Kentucky,4,55,61,Connecticut,3,56,62,Final Four
+66,VCU,11,62,63,Butler,8,70,64,Final Four
+67,Connecticut,3,53,65,Butler,8,41,66,Final Four
