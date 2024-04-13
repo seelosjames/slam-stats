@@ -17,8 +17,8 @@ urlpatterns = [
     path("players/<str:conference>", views.getTeams),
     path("players/<str:conference>/<int:num>", views.getTeams),
 
-    path("conference/", views.getTeams),
-    path("conference/<str:conference>", views.getTeams),
-    path("conference/<str:team>", views.getTeams),
-    path("conference/<str:team>/<int:num>", views.getTeams),
+    path("conferences/", views.getTeams),
+    path("conferences/<str:conference>", views.getTeams),
+    path("conferences/<str:team>", views.getTeams),
+    path("conferences/<str:team>/<int:num>", views.getTeams),
 ]

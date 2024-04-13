@@ -85,10 +85,10 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'slam_stats',
+        'NAME': 'test',
         'USER': 'postgres',
-        'PASSWORD': 'Ellietug10',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'postgres',
+        'HOST': 'slam-stats.cn22agassytu.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
