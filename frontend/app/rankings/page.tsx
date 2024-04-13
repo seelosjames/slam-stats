@@ -2,12 +2,12 @@
 import { useEffect, useState } from "react";
 
 export default function Rankings() {
-  const [rankings, setRankings] = useState([]);
+  const [rankings, setRankings] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/rankings/teams/");
+        const response = await fetch("http://127.0.0.1:8000/rankings/teams/");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -27,8 +27,8 @@ export default function Rankings() {
     <div className="">
       <h1>Rankings</h1>
       <ul>
-        {rankings.map(item => (
-          <li>{item.team}</li>
+        {rankings.map((item) => (
+          <li key={item.rank}>{item.team} {item.rating}</li>
         ))}
       </ul>
     </div>
