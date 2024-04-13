@@ -7,7 +7,7 @@ export default function Rankings() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/rankings/teams/");
+        const response = await fetch("http://127.0.0.1:8000/rankings/players/");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -28,7 +28,7 @@ export default function Rankings() {
       <h1>Rankings</h1>
       <ul>
         {rankings.map((item) => (
-          <li key={item.rank}>{item.team} {item.rating}</li>
+          <li key={item.pk}>Name: {item.name} -- Team: {item.team} -- Conference: {item.conference} -- Rating: {item.rating}</li>
         ))}
       </ul>
     </div>
