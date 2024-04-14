@@ -26,11 +26,26 @@ export default function Rankings() {
   return (
     <div className="">
       <h1>Rankings</h1>
-      <ul>
-        {rankings.map((item) => (
-          <li key={item.pk}>Name: {item.name} -- Team: {item.team} -- Conference: {item.conference} -- Rating: {item.rating}</li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Rating</th>
+            <th>Name</th>
+            <th>Team</th>
+            <th>Conference</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rankings.map((item) => (
+            <tr key={item.pk}>
+              <td>{item.rating}</td>
+              <td>{item.name}</td>
+              <td>{item.team}</td>
+              <td>{item.conference}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
