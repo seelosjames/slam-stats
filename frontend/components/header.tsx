@@ -10,6 +10,8 @@ interface Props {
 }
 
 const Header = ({ authenticated }: Props) => {
+  
+
   const handleLogout = () => {};
 
   return (
