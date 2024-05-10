@@ -4,8 +4,11 @@
 import { useContext, useState, FormEvent } from "react";
 import Link from "next/link";
 import AuthContext from "@/context/AuthContext";
+import { useRouter } from "next/router";
+
 
 const Login: React.FC = () => {
+  // const router = useRouter();
 
   let { contextData } = useContext(AuthContext)
 

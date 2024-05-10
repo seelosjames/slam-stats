@@ -3,18 +3,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import AuthContext from "@/context/AuthContext";
-
+import { useEffect, useState, useContext } from "react";
+import { useRouter } from "next/router";
 
 interface Props {
   authenticated: boolean;
 }
 
 const Header = ({ authenticated }: Props) => {
+  let { contextData } = useContext(AuthContext);
+  // const router = useRouter();
 
-  authenticated = true;
-  
-
-  const handleLogout = () => {};
+  function handleLogout() {
+    contextData.logoutUser;
+    // router.push("/");
+  }
 
   return (
     <header className="sticky top-0 left-0 flex items-center justify-between pl-16 pr-32 bg-black text-white">
@@ -36,7 +39,7 @@ const Header = ({ authenticated }: Props) => {
           <li>
             <div>
               {authenticated ? (
-                <button onClick={handleLogout}>Logout</button>
+                <button onClick={contextData.logoutUser}>Logout</button>
               ) : (
                 <div>
                   <p>

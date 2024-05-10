@@ -211,7 +211,7 @@ const Home = () => {
 
   let { contextData } = useContext(AuthContext)
 
-
+  console.log(contextData)
   return (
     <div className="flex h-screen p-8">
       <div className="w-3/5">
