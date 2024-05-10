@@ -1,5 +1,6 @@
 import { createContext, useState, FormEvent, useEffect } from "react";
 import { jwtDecode } from "jwt-decode";
+import { useRouter } from "next/navigation";
 
 interface User {
   username: string;
@@ -30,6 +31,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
  let [authTokens, setAuthTokens] = useState<{ access: string; refresh: string } | null>(null);
   let [user, setUser] = useState<User | null>(null);
   let [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   let loginUser = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,6 +62,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
       console.log("User: ", user)
       console.log("AuthTokens: ", authTokens)
       localStorage.setItem("authTokens", JSON.stringify(data));
+      router.push("/");
     } else {
       alert("Something went wrong!");
     }
@@ -69,6 +72,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem("authTokens");
+      router.push("/");
   };
 
   let updateToken = async () => {

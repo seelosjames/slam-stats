@@ -38,7 +38,7 @@ const Header = ({ authenticated }: Props) => {
           </li>
           <li>
             <div>
-              {authenticated ? (
+              {contextData.user ? (
                 <button onClick={contextData.logoutUser}>Logout</button>
               ) : (
                 <div>
