@@ -216,7 +216,7 @@ const Home = () => {
     <div className="flex h-screen p-8">
       <div className="w-3/5">
         <h1 className="text-7xl">Slam Stats</h1>
-        {contextData.user ? <p>{ contextData.user }</p> : <p>Not Authenticated</p>}
+        {/* {contextData.user ? <p>{ contextData.user }</p> : <p>Not Authenticated</p>} */}
       </div>
       <div>
         <table className="text-l border-solid border-black border-2">

@@ -42,6 +42,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     });
 
     let data = await response.json();
+    console.log(jwtDecode(data.access));
 
     if (response.status === 200) {
       setAuthTokens(data);
