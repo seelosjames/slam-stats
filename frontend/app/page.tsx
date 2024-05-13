@@ -2,7 +2,7 @@
 
 import AuthContext from "@/context/AuthContext";
 import "./globals.css";
-import { useEffect, useState, useContext } from "react";
+import { useState, useContext } from "react";
 
 
 const Home = () => {

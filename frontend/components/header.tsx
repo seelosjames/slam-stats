@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import AuthContext from "@/context/AuthContext";
-import { useEffect, useState, useContext } from "react";
-import { useRouter } from "next/router";
+import { useContext } from "react";
 
 interface Props {
   authenticated: boolean;
@@ -12,12 +11,6 @@ interface Props {
 
 const Header = () => {
   let { contextData } = useContext(AuthContext);
-  // const router = useRouter();
-
-  function handleLogout() {
-    contextData.logoutUser;
-    // router.push("/");
-  }
 
   return (
     <header className="sticky top-0 left-0 flex items-center justify-between pl-16 pr-32 bg-black text-white">

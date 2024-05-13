@@ -1,9 +1,8 @@
 // pages/signup.tsx
 "use client";
 
-import { useState, useContext, FormEvent } from "react";
+import { useContext, FormEvent } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import AuthContext from "@/context/AuthContext";
 
 
