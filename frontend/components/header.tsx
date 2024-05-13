@@ -10,7 +10,7 @@ interface Props {
   authenticated: boolean;
 }
 
-const Header = ({ authenticated }: Props) => {
+const Header = () => {
   let { contextData } = useContext(AuthContext);
   // const router = useRouter();
 

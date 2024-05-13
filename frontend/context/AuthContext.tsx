@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 
 interface User {
   username: string;
-  // Add other properties as needed
 }
 
 interface AuthContextType {
@@ -12,6 +11,7 @@ interface AuthContextType {
     user: User | null;
     loginUser: (e: FormEvent<HTMLFormElement>) => Promise<void>;
     logoutUser: () => void;
+    signupUser: (e: FormEvent<HTMLFormElement>) => Promise<void>;
   };
 }
 
@@ -22,28 +22,67 @@ interface Props {
 const AuthContext = createContext<AuthContextType>({
   contextData: {
     user: null,
-    loginUser: async (e: FormEvent<HTMLFormElement>) => { },
-    logoutUser: () => { }
+    loginUser: async (e: FormEvent<HTMLFormElement>) => {},
+    logoutUser: () => {},
+    signupUser: async (e: FormEvent<HTMLFormElement>) => {},
   },
 });
 
 export const AuthProvider: React.FC<Props> = ({ children }) => {
- let [authTokens, setAuthTokens] = useState<{ access: string; refresh: string } | null>(null);
+  let [authTokens, setAuthTokens] = useState<{ access: string; refresh: string } | null>(null);
   let [user, setUser] = useState<User | null>(null);
   let [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  let loginUser = async (e: FormEvent<HTMLFormElement>) => {
+  let signupUser = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-   
 
     const target = e.target as HTMLFormElement;
     const username = target.username.value;
     const password = target.password.value;
 
-    console.log("Start sign in with username: " + username + " and password: " + password);
+    let response = await fetch("http://127.0.0.1:8000/authentication/signup/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username: username, password: password }),
+    });
 
-    console.log("Form Submitted");
+    if (response.status === 201) {
+      console.log("successful creation");
+      let response_signup = await fetch("http://127.0.0.1:8000/authentication/token/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username: username, password: password }),
+      });
+
+      let data_signup = await response_signup.json();
+
+      if (response_signup.status === 200) {
+        console.log("login")
+        console.log(data_signup)
+        setAuthTokens(data_signup);
+        setUser(jwtDecode(data_signup.access));
+        localStorage.setItem("authTokens", JSON.stringify(data_signup));
+        router.push("/");
+      } else {
+        alert("Something went wrong!");
+      }
+    } else {
+      alert("Something went wrong!");
+    }
+  };
+
+  let loginUser = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const target = e.target as HTMLFormElement;
+    const username = target.username.value;
+    const password = target.password.value;
+
     let response = await fetch("http://127.0.0.1:8000/authentication/token/", {
       method: "POST",
       headers: {
@@ -53,14 +92,10 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     });
 
     let data = await response.json();
-    console.log(jwtDecode(data.access));
 
     if (response.status === 200) {
-      console.log("Response data: ", data)
       setAuthTokens(data);
       setUser(jwtDecode(data.access));
-      console.log("User: ", user)
-      console.log("AuthTokens: ", authTokens)
       localStorage.setItem("authTokens", JSON.stringify(data));
       router.push("/");
     } else {
@@ -72,7 +107,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem("authTokens");
-      router.push("/");
+    router.push("/");
   };
 
   let updateToken = async () => {
@@ -104,6 +139,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     authTokens: authTokens,
     loginUser: loginUser,
     logoutUser: logoutUser,
+    signupUser: signupUser,
   };
 
   // useEffect(() => {

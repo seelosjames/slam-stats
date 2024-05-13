@@ -215,10 +215,10 @@ const Home = () => {
   return (
     <div className="flex h-screen p-8">
       <div className="w-3/5">
-        <h1 className="text-7xl">Slam Stats</h1>
-        {/* {contextData.user ? <p>{ contextData.user }</p> : <p>Not Authenticated</p>} */}
+        {/* <h1 className="text-7xl">Slam Stats</h1> */}
+        {contextData.user ? <p>This user is logged in: { contextData.user.username }</p> : <p>Not Authenticated</p>}
       </div>
-      <div>
+      {/* <div>
         <table className="text-l border-solid border-black border-2">
           <thead className="border-b border-solid border-black border-2">
             <tr>
@@ -239,7 +239,7 @@ const Home = () => {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> */}
     </div>
   );
 };
