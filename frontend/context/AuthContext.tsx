@@ -52,7 +52,6 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     });
 
     if (response.status === 201) {
-      console.log("successful creation");
       let response_signup = await fetch("http://127.0.0.1:8000/authentication/token/", {
         method: "POST",
         headers: {
@@ -64,8 +63,6 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
       let data_signup = await response_signup.json();
 
       if (response_signup.status === 200) {
-        console.log("login")
-        console.log(data_signup)
         setAuthTokens(data_signup);
         setUser(jwtDecode(data_signup.access));
         localStorage.setItem("authTokens", JSON.stringify(data_signup));
