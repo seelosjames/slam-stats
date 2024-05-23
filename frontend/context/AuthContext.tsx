@@ -40,13 +40,15 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     const target = e.target as HTMLFormElement;
     const username = target.username.value;
     const password = target.password.value;
+    const email = target.email.value;
+
 
     let response = await fetch("http://127.0.0.1:8000/authentication/signup/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: username, password: password }),
+      body: JSON.stringify({ username: username, password: password, email: email }),
     });
 
     if (response.status === 201) {
@@ -82,13 +84,16 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     const target = e.target as HTMLFormElement;
     const username = target.username.value;
     const password = target.password.value;
+    const email = target.email.value;
+
+    console.log(email)
 
     let response = await fetch("http://127.0.0.1:8000/authentication/token/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ username: username, password: password }),
+      body: JSON.stringify({ username: username, password: password, email: email }),
     });
 
     let data = await response.json();

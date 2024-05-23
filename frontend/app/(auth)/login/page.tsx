@@ -19,6 +19,7 @@ const Login: React.FC = () => {
       {contextData.user && <p>Hello {contextData.user.username}</p>}
       <form onSubmit={(e: FormEvent<HTMLFormElement>) => contextData.loginUser(e)}>
         <input type="text" name="username" placeholder="Username" />
+        <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
         <button type="submit">Login</button>
       </form>

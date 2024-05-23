@@ -16,6 +16,7 @@ const Signup: React.FC = () => {
       <h1>Sign Up</h1>
       <form onSubmit={(e: FormEvent<HTMLFormElement>) => contextData.signupUser(e)}>
         <input type="text" name="username" placeholder="Username" />
+        <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
         <button type="submit">Sign Up</button>
       </form>
