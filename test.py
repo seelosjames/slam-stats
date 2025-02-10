@@ -10,7 +10,7 @@ data = {
     'game_id': [101, 102, 103, 101, 102, 103, 101, 102, 103],
     'opponent_id': [20, 21, 22, 20, 21, 22, 20, 21, 22],
     'home_game': [1, 0, 1, 1, 0, 1, 1, 0, 1],  # 1 = Home, 0 = Away
-    'points': [15, 18, 20, 10, 12, 9, 5, 7, 8],
+    'points': [152, 182, 210, 10, 12, 9, 5, 7, 8],
     'rebounds': [5, 7, 6, 8, 6, 7, 3, 4, 3],
     'assists': [3, 2, 4, 5, 6, 4, 1, 1, 2]
 }
@@ -77,7 +77,7 @@ def predict_future_game(player_data):
 # Example usage
 future_game = {
     'player_id': [1, 2, 3],
-    'opponent_id': [25, 25, 25],
+    'opponent_id': [21, 20, 21],
     'home_game': [1, 1, 1]
 }
-# predict_future_game(future_game)
+predict_future_game(future_game)
