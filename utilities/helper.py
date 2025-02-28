@@ -76,7 +76,7 @@ prop_name_mapping = {
     "Middle Tennessee State Blue Raiders":["Middle Tennessee State", "Middle Tennessee St.", "Middle Tennessee"],
     "Western Illinois Leathernecks":["Western Illinois"],
     "Eastern Illinois Panthers":["Eastern Illinois"],
-    "South Dakota State Jack Rabbits":["South Dakota State"],
+    "South Dakota State Jackrabbits":["South Dakota State", "South Dakota St."],
     "Arkansas State Red Wolves":["Arkansas State", "Arkansas St."],
     "Mississippi Rebels":["Mississippi", "Ole Miss"],
     "New Mexico State Aggies":["New Mexico State", "New Mexico St."],
@@ -314,7 +314,7 @@ prop_name_mapping = {
     "New Mexico Lobos": ['New Mexico'],
     "Ball State Cardinals":["Ball State", "Ball St."],
     "Illinois State Redbirds":["Illinois State", "Illinois St."],
-    "IU Indy Jaguars": ['IU Indy', "Indiana - Purdue", "IUPUI"],
+    "IU Indianapolis Jaguars": ['IU Indy', "Indiana - Purdue", "IUPUI"],
     "Oregon State Beavers":["Oregon State", "Oregon St."],
     "Arizona Wildcats": ['Arizona'],
     "Wisconsin Badgers": ['Wisconsin'],
@@ -436,7 +436,7 @@ def main():
     
     for team_name in teams[:]:  # Iterate over a copy of the list
         print(f"Processing: {team_name}")
-        webbrowser.open(f"https://www.google.com/search?q={team_name}+basketball+team")  # Auto-search team
+        webbrowser.open(f"https://www.google.com/search?q={team_name}+basketball")  # Auto-search team
         
         # Manually enter data
         display_name = input("Enter Display Name: ")
