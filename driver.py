@@ -1,5 +1,5 @@
 import pandas as pd
-from helper import *
+from utilities.helper import *
 
 def to_db(year):
     box_scores_df = pd.read_csv("data/organized/" + str(year) + "/box_scores.csv")
