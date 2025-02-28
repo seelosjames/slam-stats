@@ -371,5 +371,70 @@ def normalize_team_name(name):
         if name in aliases:
             return standard_name
         
-    print(name, "not found")
-    return name  # Return original name if no match is found
+    # print(name, "not found")
+    # return name  # Return original name if no match is found
+
+import csv
+import os
+import webbrowser
+
+def load_teams(team_file):
+    """Load teams from a text file into a list."""
+    with open(team_file, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+def save_teams(team_file, teams):
+    """Save remaining teams back to the text file."""
+    with open(team_file, "w", encoding="utf-8") as f:
+        f.writelines("\n".join(teams) + "\n")
+
+def append_to_csv(csv_file, data, headers):
+    """Append the collected data to a CSV file."""
+    file_exists = os.path.isfile(csv_file)
+    with open(csv_file, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if not file_exists:
+            writer.writerow(headers)  # Write headers if file is new
+        writer.writerow(data)
+
+def main():
+    team_file = "output.txt"  # Change if needed
+    csv_file = "teams_data.csv"
+    headers = ["team_name", "display_name", "mascot", "university", "abbreviation", "city", "state", "arena", "longitude", "latitude", "time_zone"]
+    
+    teams = load_teams(team_file)
+    
+    if not teams:
+        print("No teams left to process!")
+        return
+    
+    for team_name in teams[:]:  # Iterate over a copy of the list
+        print(f"Processing: {team_name}")
+        webbrowser.open(f"https://www.google.com/search?q={team_name}+basketball+team")  # Auto-search team
+        
+        # Manually enter data
+        display_name = input("Enter Display Name: ")
+        mascot = input("Enter Mascot: ")
+        university = input("Enter University: ")
+        abbreviation = input("Enter Abbreviation: ")
+        webbrowser.open(f"https://www.google.com/maps/search/{university}")  # Auto-search university in Google Maps
+        city = input("Enter City: ")
+        state = input("Enter State: ")
+        arena = input("Enter Arena: ")
+        longitude = input("Enter Longitude: ")
+        latitude = input("Enter Latitude: ")
+        time_zone = input("Enter Time Zone: ")
+        
+        # Append data to CSV
+        append_to_csv(csv_file, [team_name, display_name, mascot, university, abbreviation, city, state, arena, longitude, latitude, time_zone], headers)
+        
+        # Remove processed team
+        teams.remove(team_name)
+        save_teams(team_file, teams)
+        
+        print(f"{team_name} saved! {len(teams)} teams left.")
+    
+    print("All teams processed!")
+
+if __name__ == "__main__":
+    main()

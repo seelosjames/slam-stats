@@ -10,8 +10,19 @@ def to_db(year):
     
     df = pd.concat([matchups_df, settings_df, scorings_df], axis=1)
     
+    teams = []
     for row in df.itertuples(index=False):
-        normalize_team_name(row.home_team)
+        teams.append(normalize_team_name(row.home_team))
+        teams.append(normalize_team_name(row.away_team))
+    teams_set = set(teams)
+        
+    print(teams_set)
+    for team in teams_set:
+        print(team)
+    with open("output.txt", "w") as file:
+        for item in teams_set:
+            if item != None:
+                file.write(item + "\n")
     
     
 to_db(2010)
