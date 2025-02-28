@@ -1,4 +1,5 @@
 import pandas as pd
+from helper import *
 
 def to_db(year):
     box_scores_df = pd.read_csv("data/organized/" + str(year) + "/box_scores.csv")
@@ -7,8 +8,10 @@ def to_db(year):
     scorings_df = pd.read_csv("data/organized/" + str(year) + "/scorings.csv")
     settings_df = pd.read_csv("data/organized/" + str(year) + "/settings.csv")
     
-    combine = pd.concat([matchups_df, settings_df, scorings_df], axis=1)
-    print(combine.columns)
+    df = pd.concat([matchups_df, settings_df, scorings_df], axis=1)
+    
+    for row in df.itertuples(index=False):
+        normalize_team_name(row.home_team)
     
     
 to_db(2010)
