@@ -68,7 +68,7 @@ prop_name_mapping = {
     "UL Monroe Warhawks":["UL Monroe", "Louisiana-Monroe", "Louisiana Monroe"],
     "Texas Tech Red Raiders":["Texas Tech"],
     "Tennessee State Tigers":["Tennessee State", "Tennessee St."],
-    "Mississippi State Bullldogs":["Mississippi State", "Mississippi St."],
+    "Mississippi State Bulldogs":["Mississippi State", "Mississippi St."],
     "Longwood Lancers":["Longwood"],
     "Kansas Jayhawks":["Kansas"],
     "Brown Bears":["Brown"],
