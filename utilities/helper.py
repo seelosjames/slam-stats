@@ -421,7 +421,6 @@ def get_location_data(api_key, university):
     return "", "", "", "", ""
 
 def main():
-    # GOOGLE_API_KEY = "AIzaSyDpBS5hiWnDl-uvWqf97L8WdPv16OI0TDI"
     GOOGLE_API_KEY = "AIzaSyDpBS5hiWnDl-uvWqf97L8WdPv16OI0TDI"
     team_file = "output.txt"  # Change if needed
     csv_file = "teams_data.csv"

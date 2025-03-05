@@ -92,7 +92,7 @@ UN Las Vegas Rebels,UNLV,Rebels,University of Nevada Las Vegas,UNLV,Las Vegas,Ne
 Massachusetts Minutemen,UMass,Minutemen,University of Massachusetts,UM,Amherst,Massachusetts,-72.5314278,42.38655809999999,America/New_York
 Southern Jaguars,Southern,Jaguars,Southern University,SU,Baton Rouge,Louisiana,-91.1929407,30.5265222,America/Chicago
 Northwestern State Demons,Northwestern State,Demons,Northwestern State University,NSU,Natchitoches,Louisiana,-93.097876,31.7489726,America/Chicago
-Manhattan Jaspers,Manhattan,Jaspers,Manhattan University,MU,,New York,-73.9011239,40.8900515,America/New_York
+Manhattan Jaspers,Manhattan,Jaspers,Manhattan University,MU,Bronx,New York,-73.9011239,40.8900515,America/New_York
 Queens Royals,Queens,Royals,Queens University,QU,Charlotte,North Carolina,-80.83297240000002,35.188626,America/New_York
 UW Green Bay Phoenix,Green Bay,Phoenix,University of Wisconsin Green Bay,UWGB,Green Bay,Wisconsin,-87.9210482,44.5313196,America/Chicago
 Saint Francis Red Flash,Saint Francis,Red Flash,Saint Francis University,SFU,Loretto,Pennsylvania,-78.6388875,40.5037488,America/New_York
@@ -200,3 +200,52 @@ Western Michigan Broncos,Western Michigan,Broncos,Western Michigan University,WM
 West Virginia Mountaineers,West Virginia,Mountaineers,West Virginia University,WVU,Morgantown,West Virginia,-79.9697147,39.6480359,America/New_York
 Delaware State Hornets,Delaware State,Hornets,Delaware State University,DSU,Dover,Delaware,-75.54340309999999,39.1852205,America/New_York
 East Tennessee State Buccaneers,East Tennessee State,Buccaneers,East Tennessee State University,ETSU,Johnson City,Tennessee,-82.36985299999999,36.3023954,America/New_York
+Texas State Bobcats,Texas State,Bobcats,Texas State University,TSU,San Marcos,Texas,-97.938351,29.888411,America/Chicago
+East Carolina Pirates,East Carolina,Pirates,East Carolina University,ECU,Greenville,North Carolina,-77.3665364,35.6068806,America/New_York
+Washington Huskies,Washington,Huskies,University of Washington,UW,Seattle,Washington,-122.3066181,47.65671709999999,America/Los_Angeles
+Jacksonville State Gamecocks,Jacksonville State,Gamecocks,Jacksonville State University,JSU,Jacksonville,Alabama,-85.7681921,33.8230953,America/Chicago
+Purdue Fort Wayne Mastodons,Purdue Fort Wayne,Mastodons,Purdue University Fort Wayne,PUFW,Fort Wayne,Indiana,-85.105941,41.1184532,America/Indiana/Indianapolis
+Arizona State Sun Devils,Arizona State,Sun Devils,Arizona State University,ASU,Tempe,Arizona,-111.9278306,33.4229975,America/Phoenix
+High Point Panthers,High Point,Panthers,High Point University,HPU,High Point,North Carolina,-79.9962549,35.972171,America/New_York
+Sam Houston State Bearkats,Sam Houston,Bearkats,Sam Houston State University,SHSU,Huntsville,Texas,-95.547276,30.7135813,America/Chicago
+Navy Midshipmen,Navy,Midshipmen,United States Naval Academy,USNA,Annapolis,Maryland,-76.48233499999999,38.98364830000001,America/New_York
+California State Bakersfield Roadrunners,Cal State Bakersfield,Roadrunners,California State University Bakersfield,CSUB,Bakersfield,California,-119.1033448,35.3486641,America/Los_Angeles
+Drake Bulldogs,Drake,Bulldogs,Drake University,DU,Des Moines,Iowa,-93.6546481,41.6030995,America/Chicago
+Texas A&M Aggies,Texas A&M,Aggies,Texas A&M University,TAMU,College Station,Texas,-96.3568404,30.6066091,America/Chicago
+Hartford Hawks,Hartford,Hawks,University of Hartford,UH,West Hartford,Connecticut,-72.7138039,41.7984942,America/New_York
+Texas Christian Horned Frogs,TCU,Horned Frogs,Texas Christian University,TCU,Fort Worth,Texas,-97.36280409999999,32.7078531,America/Chicago
+Niagara Purple Eagles,Niagara,Eagles,Niagara University,NU,Niagara University,New York,-79.0349955,43.1369816,America/New_York
+Virginia Military Institute Keydets,VMI,Keydets,Virginia Military Institute,VMI,Lexington,Virginia,-79.4351978,37.7909313,America/New_York
+Northern Illinois Huskies,Northern Illinois,Huskies,Northern Illinois University,NIU,DeKalb,Illinois,-88.77387829999999,41.934194,America/Chicago
+Dayton Flyers,Dayton,Flyers,University of Dayton,UD,Dayton,Ohio,-84.17904449999999,39.7401454,America/New_York
+Central Arkansas Bears,Central Arkansas,Bears,University of Central Arkansas,UCA,Conway,Arkansas,-92.4578916,35.0780939,America/Chicago
+Gonzaga Bulldogs,Gonzaga,Bulldogs,Gonzaga University,GU,Spokane,Washington,-117.4021153,47.6658548,America/Los_Angeles
+Fresno State Bulldogs,Fresno State,Bulldogs,California State University Fresno,CSUF,Fresno,California,-119.7461767,36.8136777,America/Los_Angeles
+Quinnipiac Bobcats,Quinnipiac,Bobcats,Quinnipiac University,QU,Hamden,Connecticut,-72.89364929999999,41.4189262,America/New_York
+Georgia Bulldogs,Georgia,Bulldogs,University of Georgia,UGA,Athens,Georgia,-83.37242420000001,33.9423394,America/New_York
+Stony Brook Seawolves,Stony Brook,Seawolves,Stony Brook University,SBU,Stony Brook,New York,-73.1237618,40.90413849999999,America/New_York
+Maine Black Bears,Maine,Black Bears,University of Maine,UM,Orono,Maine,-68.6680916,44.90198849999999,America/New_York
+Youngstown State Penguins,Youngstown State,Penguins,Youngstown State University,YSU,Youngstown,Ohio,-80.6480952,41.1066413,America/New_York
+Fordham Rams,Fordham,Rams,Fordham University,FU,Bronx,New York,-73.8852771,40.8614567,America/New_York
+Detroit Mercy Titans,Detroit Mercy,Titans,University of Detroit Mercy,UDM,Detroit,Michigan,-83.1379388,42.4140847,America/Detroit
+Loyola Marymount Lions,Loyola Marymount,Lions,Loyola Marymount University,LMU,Los Angeles,California,-118.4188984,33.9691953,America/Los_Angeles
+Yale Bulldogs,Yale,Bulldogs,Yale University,YU,New Haven,Connecticut,-72.92234309999999,41.3163244,America/New_York
+Wright State Raiders,Wright State,Raiders,Wright State University,WSU,Dayton,Ohio,-84.06510779999999,39.7798542,America/New_York
+North Carolina State Wolfpack,NC State,Wolfpack,North Carolina State University,NCSU,Raleigh,North Carolina,-78.6812824,35.7850744,America/New_York
+James Madison Dukes,James Madison,Dukes,James Madison University,JMU,Harrisonburg,Virginia,-78.8697548,38.435092,America/New_York
+Northern Arizona Lumberjacks,Northern Arizona,Lumberjacks,Northern Arizona University,NAU,Flagstaff,Arizona,-111.6540336,35.1802684,America/Phoenix
+UNC Asheville Bulldogs,UNC Asheville,Bulldogs,University of North Carolina Asheville,UNCA,Asheville,North Carolina,-82.5665332,35.6170787,America/New_York
+Milwaukee Panthers,Milwaukee,Panthers,University of Wisconsin Milwaukee,UWM,Milwaukee,Wisconsin,-87.8819686,43.078263,America/Chicago
+Georgia Southern Eagles,Georgia Southern,Eagles,Georgia Southern University,GSU,Statesboro,Georgia,-81.7869734,32.4206845,America/New_York
+UT Rio Grande Valley Vaqueros,UT Rio Grande Valley,Vaqueros,University of Texas Rio Grande Valley,UTRGV,Edinburg,Texas,-98.17401579999999,26.3081983,America/Chicago
+Sacramento State Hornets,Sacramento State,Hornets,Sacramento State University,SSU,Sacramento,California,-121.423993,38.560824,America/Los_Angeles
+UM Kansas City Roos,Kansas City,Roos,University of Missouri Kansas City,UMKC,Kansas City,Missouri,-94.577545,39.0333035,America/Chicago
+Pacific Tigers,Pacific,Tigers,University of the Pacific,UOP,Stockton,California,-121.3128577,37.9798869,America/Los_Angeles
+Georgia State Panthers,Georgia State,Panthers,Georgia State University,GSU,Atlanta,Georgia,-84.38528190000001,33.753068,America/New_York
+Xavier Musketeers,Xavier,Musketeers,Xavier University,XU,Cincinnati,Ohio,-84.47406869999999,39.1498065,America/New_York
+Pepperdine Waves,Pepperdine,Waves,Pepperdine University,PU,Malibu,California,-118.709596,34.0415037,America/Los_Angeles
+Seton Hall Pirates,Seton Hall,Pirates,Seton Hall University,SHU,South Orange Village,New Jersey,-74.246082,40.7430841,America/New_York
+Virginia Cavaliers,Virginia,Cavaliers,University of Virginia,UVA,Charlottesville,Virginia,-78.5079772,38.0335529,America/New_York
+Southern Methodist Mustangs,SMU,Mustangs,Southern Methodist University,SMU,Dallas,Texas,-96.78451749999999,32.8412178,America/Chicago
+Baylor Bears,Baylor,Bears,Baylor University,BU,Waco,Texas,-97.11354,31.5500848,America/Chicago
+Missouri Tigers,Missouri,Tigers,University of Missouri,UM,Columbia,Missouri,-92.32773750000001,38.9403808,America/Chicago
